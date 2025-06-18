@@ -37,34 +37,34 @@ Khoor Zruog
 
 Output:
 ```
-## 🔁 All Caesar Cipher Shifts for "Khoor Zruog"
+Enter the Caesar-encrypted message:
+🔍 Attempting brute-force decryption...
 
-Shift 0 : Khoor Zruog  
-Shift 1 : Jgnnq Yqtpf  
-Shift 2 : Ifmmp Xpsoe  
-Shift 3 : Hello World  
-Shift 4 : Gdkkn Vnqkc  
-Shift 5 : Fcjjm Umpjb  
-Shift 6 : Ebiil Tloia  
-Shift 7 : Dahhk Sknhz  
-Shift 8 : Czggj Rjmgy  
-Shift 9 : Byffi Qilfe  
-Shift 10: Axeeh Pkhed  
-Shift 11: Zwddg Ojgdc  
-Shift 12: Yvccf Nifcb  
-Shift 13: Xubbe Mheba  
-Shift 14: Wtaad Lgdaz  
-Shift 15: Vszzc Kfczy  
-Shift 16: Uryyb Jebzx  
-Shift 17: Tqxxa Idawy  
-Shift 18: Spwwz Hczvx  
-Shift 19: Rovvy Gbyuw  
-Shift 20: Qnuux Faxtv  
-Shift 21: Pmttw Ewusu  
-Shift 22: Olssv Dvrtt  
-Shift 23: Nkrru Cuqss  
-Shift 24: Mjqqt Btprr  
-Shift 25: LippS Aspqq  
+[Shift  1] Jgnnq Yqtnf
+[Shift  2] Ifmmp Xpsme
+[Shift  3] Hello World
+[Shift  4] Gdkkn Vnqkc
+[Shift  5] Fcjjm Umpjb
+[Shift  6] Ebiil Tloia
+[Shift  7] Dahhk Sknhz
+[Shift  8] Czggj Rjmgy
+[Shift  9] Byffi Qilfx
+[Shift 10] Axeeh Phkew
+[Shift 11] Zwddg Ogjdv
+[Shift 12] Yvccf Nficu
+[Shift 13] Xubbe Mehbt
+[Shift 14] Wtaad Ldgas
+[Shift 15] Vszzc Kcfzr
+[Shift 16] Uryyb Jbeyq
+[Shift 17] Tqxxa Iadxp
+[Shift 18] Spwwz Hzcwo
+[Shift 19] Rovvy Gybvn
+[Shift 20] Qnuux Fxaum
+[Shift 21] Pmttw Ewztl
+[Shift 22] Olssv Dvysk
+[Shift 23] Nkrru Cuxrj
+[Shift 24] Mjqqt Btwqi
+[Shift 25] Lipps Asvph
 ```
 
 ---
