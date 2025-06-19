@@ -1,0 +1,2 @@
+# No external Python libraries are required for this proxy implementation.
+# The code uses only Python standard library modules.
