@@ -1,0 +1,2 @@
+# No external Python libraries are required for this project.
+# The implementation uses only the Python standard library.
