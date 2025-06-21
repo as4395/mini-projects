@@ -32,7 +32,7 @@ This repository is a curated set of offensive and investigative tools developed 
 
 ### Reverse Engineering
 - **Static String Extractor**: Pulls readable strings from binaries and flags suspicious content.
-- **Custom Disassembler Wrapper**: Wraps `capstone` disassembly with simplified CLI interface.
+- **Custom Disassembler Wrapper**: Wraps ```capstone``` disassembly with simplified CLI interface.
 - **PE/ELF Inspector**: Scans metadata and sections for clues in executables.
 
 ### Forensics
@@ -46,7 +46,7 @@ This repository is a curated set of offensive and investigative tools developed 
 - **Email Verifier**: Lightweight verifier of email domain, DNS, and MX records.
 
 ### Networking
-- **Port Sweep CLI**: Fast TCP/UDP scanner using asyncio.
+- **Port Sweep CLI**: Fast TCP/UDP scanner using ```asyncio```.
 - **DNS Recon Tool**: Enumerates subdomains and records using DNS queries.
 - **Custom Traceroute**: ICMP-based traceroute with TTL timing and reverse DNS lookup.
 
@@ -66,8 +66,8 @@ This repository is a curated set of offensive and investigative tools developed 
 
 1. Clone this repository:
    ```bash
-   git clone 
-   cd ctf-toolset
+   git clone https://github.com/as4395/CTF_Toolset.git
+   cd CTF_Toolset
    ```
 
 2. Navigate to any category folder (e.g., `cryptography/`) to use or modify the tools.
