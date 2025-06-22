@@ -1,4 +1,4 @@
-import argparse-
+import argparse
 import hashlib
 from passlib.hash import nthash
 
