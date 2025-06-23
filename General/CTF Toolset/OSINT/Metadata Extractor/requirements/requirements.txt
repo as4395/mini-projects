@@ -1,0 +1,6 @@
+Pillow
+exifread
+python-docx
+PyPDF2
+openpyxl
+python-pptx
