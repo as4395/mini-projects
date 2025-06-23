@@ -1,0 +1,2 @@
+# No external libraries are required for Disk Image Searcher.
+# All functionality is implemented using the Python standard library.
