@@ -1,7 +1,7 @@
 # Base Encoder/Decoder
 
 ## Description
-A simple CLI tool to encode or decode strings using various base encodings commonly encountered in CTFs. It supports base16, base32, base64, and base85. Automatically detects base when decoding, if possible.
+A simple CLI tool to encode or decode strings using various base encodings commonly encountered in CTFs. It supports base16, base32, base64, base85, and automatically detects the base when decoding, if possible.
 
 ## Features
 - Encode a string in multiple base formats
