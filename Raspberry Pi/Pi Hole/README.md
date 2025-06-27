@@ -47,4 +47,4 @@ This project uses a Raspberry Pi (or any Linux system) to run the DNS server, wh
 
 ## Customize
 - Add/remove blocklist URLs in `src/blocklist_updater.py`
-- Adjust update interval or DNS server port in s`rc/pi_hole_dns.py`
+- Adjust update interval or DNS server port in `src/pi_hole_dns.py`
