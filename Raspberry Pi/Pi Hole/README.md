@@ -1,47 +1,50 @@
 # Pi Hole
 
-Pi Hole is a Raspberry Pi-based DNS sinkhole that blocks advertisements by filtering DNS queries. It acts as a network-wide ad blocker by redirecting DNS requests for ad and tracker domains to a null IP address, effectively preventing ads from loading.
+## Overview
+
+Pi Hole is a local DNS server designed to block advertisements by blocking DNS queries to known ad-serving domains. It works by intercepting DNS queries and responding with a null IP for domains on a blocklist, effectively preventing ads from loading on all devices using this DNS.
+
+This project uses a Raspberry Pi (or any Linux system) to run the DNS server, which downloads and aggregates multiple trusted blocklists automatically. It periodically updates the blocklist to keep blocking new ad domains.
 
 ## Features
 
-- Local DNS server running on Raspberry Pi
-- Filters DNS queries using popular ad/tracking blocklists
-- Customizable blocklist support
-- Forwards allowed DNS requests to upstream DNS servers
-- Lightweight and easy to run on low-power devices like Raspberry Pi
+- Lightweight DNS server implemented in Python
+- Aggregates multiple public adblock lists into a single blocklist
+- Blocks DNS queries to known ad/tracking/malware domains by returning 0.0.0.0
+- Periodic update of blocklists (default: every 24 hours)
+- Logs blocked queries and allowed queries
+- Easy to configure for use as DNS on your network
 
 ## Requirements
 
-- Raspberry Pi running Raspberry Pi OS or any Debian-based Linux
-- Python 3.8+
-- Root privileges to bind DNS port 53 (run with `sudo`)
-- Python packages: `dnslib`, `requests`
+- Python 3.9+ (tested with 3.9 and 3.10)
+- Internet access for blocklist updates
+- Raspberry Pi or any Linux machine for hosting
 
 ## Installation
 
-```bash
-sudo apt update
-sudo apt install python3 python3-pip
-pip3 install dnslib requests
-```
-Clone the repository and run:
-```bash
-sudo python3 src/pi_hole_dns.py
-```
-Set your router or device DNS server to your Raspberry Pi IP to activate ad blocking.
-
-## Updating Blocklists
-
-Blocklists are automatically downloaded and cached on startup and refreshed every 24 hours.
+**1.** Clone the repo:  
+   ```bash
+   git clone https://github.com/as4395/pi-hole-python.git
+   cd pi-hole-python
+   ```
+**2.** Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+**3.** Run the DNS server:
+   ```bash
+   python3 src/pi_hole_dns.py
+   ```
+**4.** Configure your router or device to use your Raspberry Pi’s IP as DNS.
 
 ## Usage
 
-- Runs a DNS server on port 53 (UDP)
-- Intercepts DNS queries for blocked domains and replies with 0.0.0.0
-- Forwards other queries to upstream DNS server (default 8.8.8.8)
+- On first run, the program will download and aggregate multiple blocklists and store them in `dblock_domains.txt`.
+- The DNS server will listen on UDP port 53 and respond to queries.
+- It will block any domain in the blocklist by responding with IP `0.0.0.0`.
+- Logs are printed to the console showing blocked and allowed requests.
 
-## Notes
-
-- Requires running with elevated privileges ( `sudo`) to bind port 53
-- Intended for local network use as a DNS ad blocker
-- Inspired by the official Pi Hole project but implemented for educational purposes
+## Customize
+- Add/remove blocklist URLs in `src/blocklist_updater.py`
+- Adjust update interval or DNS server port in s`rc/pi_hole_dns.py`
