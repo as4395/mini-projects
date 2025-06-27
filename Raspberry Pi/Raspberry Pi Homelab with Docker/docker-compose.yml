@@ -1,0 +1,32 @@
+version: '3'
+
+services:
+  nginx_homelab:
+    image: nginx:latest
+    container_name: nginx_homelab
+    ports:
+      - "8080:80"
+    restart: always
+
+  mariadb_homelab:
+    image: mariadb:latest
+    container_name: mariadb_homelab
+    environment:
+      MYSQL_ROOT_PASSWORD: examplepassword
+    ports:
+      - "3306:3306"
+    restart: always
+
+  portainer_homelab:
+    image: portainer/portainer-ce:latest
+    container_name: portainer_homelab
+    command: -H unix:///var/run/docker.sock
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - portainer_data:/data
+    ports:
+      - "9000:9000"
+    restart: always
+
+volumes:
+  portainer_data:
