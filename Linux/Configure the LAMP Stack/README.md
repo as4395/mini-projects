@@ -32,6 +32,3 @@ The LAMP stack (Linux, Apache, MySQL, PHP) is a popular open-source web developm
 ## Notes
 - Default MySQL root password is prompted securely during installation.
 - You can place your own website files in `/var/www/html`.
-
-## Author
-Abhiram S.
