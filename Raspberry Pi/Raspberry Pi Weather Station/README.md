@@ -45,8 +45,8 @@ pip3 install -r requirements.txt
 ```
 ### 3. Clone and Run
 ```bash
-git clone https://github.com/as4395/Mini-Projects/RaspberryPi/weather-station.git
-cd weather-station
+git clone https://github.com/as4395/Mini-Projects.git
+cd Mini-Projects/RaspberryPi/weather-station
 python3 src/weather_station.py
 ```
 
