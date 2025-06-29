@@ -58,3 +58,10 @@ or
 ```bash
 [2025-06-29 15:20:00] Temp: 24.6°C | Humidity: 58.1% | Pressure: 1011.2 hPa
 ```
+
+## Notes
+
+- Uses [ipinfo.io](`ipinfo.io`)  to determine location
+- Countries using imperial: US, Myanmar, Liberia
+- All other countries default to metric units
+- Data is logged with units in `weather_data.csv`
