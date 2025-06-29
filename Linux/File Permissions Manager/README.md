@@ -40,9 +40,3 @@ python3 src/permissions_manager.py --path /var/www --dry
 
 - Python 3.6+
 - Root/sudo access (required for applying permission fixes)
-
-## Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
