@@ -49,3 +49,9 @@ git clone https://github.com/as4395/Mini-Projects.git
 cd Mini-Projects/RaspberryPi/smart-mirror
 python3 src/update_weather.py
 ```
+
+# Notes
+
+- Weather units auto-adjust: US, Myanmar, Liberia → Imperial; others → Metric
+- Requires free API key from OpenWeatherMap
+- You can extend functionality with calendar integration or voice controls
