@@ -15,8 +15,8 @@ This project converts a Linux machine into a basic router by configuring network
 
 ## Setup & Usage
 ```bash
-git clone https://github.com/as4395/Mini-Projects/Linux/router-setup.git
-cd router-setup
+git clone https://github.com/as4395/Mini-Projects.git
+cd Mini-Projects/Linux/router-setup
 sudo python3 src/router_setup.py --lan eth0 --wan eth1 --action enable
 ```
 
