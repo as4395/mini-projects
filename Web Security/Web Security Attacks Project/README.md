@@ -44,7 +44,7 @@ python src/csrf_attack.py
 python src/lfi_attack.py
 ```
 
-# Notes
+## Notes
 
 - This project is for educational purposes only. Always perform testing in isolated, authorized environments.
 - Mitigation techniques are included as comments and suggestions in the source code.
