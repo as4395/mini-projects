@@ -53,4 +53,4 @@ Captured images/videos will be stored in `/var/lib/motion/`.
 ## Notes
 
 - You may need to edit `/etc/motion/motion.conf` to change resolution, frame rate, and detection sensitivity.
-- **Folder is not used** as `motion` handles the logic. Only config file is used.
+- **`/src` folder is not used** as `motion` handles the logic. Only config file is used.
